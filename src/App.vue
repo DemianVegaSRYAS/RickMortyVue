@@ -1,22 +1,31 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <userName /> -->
+    <RickAndMorty/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+// import userName from './components/userName.vue'
+import RickAndMorty from './components/rickmorty.vue';
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  components:{
+    RickAndMorty
   }
 }
 </script>
 
 <style>
+body{
+  background-color: rgb(219, 219, 219);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 97vh;
+  margin: 0;
+  padding: 0;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -25,4 +34,5 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
 </style>
